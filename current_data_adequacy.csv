@@ -1,0 +1,17 @@
+channel_a,channel_b,observed_difference_pct,power_with_90_days,estimated_days_for_80pct_power
+Content,LinkedIn Ads,0.6329834130887557,1.0,90
+Content,Outbound Sales,0.4788082701459285,1.0,90
+Content,Paid Search,0.40175686634433533,1.0,90
+Content,Referral,8.436811390439003,1.0,90
+LinkedIn Ads,Paid Search,0.1649548165563404,1.0,90
+LinkedIn Ads,Partnerships,0.47627759258508073,1.0,90
+LinkedIn Ads,Referral,14.410156473033927,1.0,90
+LinkedIn Ads,SEO,0.6250584112031855,1.0,90
+Outbound Sales,Partnerships,0.33689754313951614,1.0,90
+Outbound Sales,Referral,12.955234727988493,1.0,90
+Outbound Sales,SEO,0.4716314928220634,1.0,90
+Paid Search,Partnerships,0.2672402153321488,1.0,90
+Paid Search,Referral,12.228115162944304,1.0,90
+Paid Search,SEO,0.39495402577666694,1.0,90
+Partnerships,Referral,9.438522233511318,1.0,90
+Referral,SEO,8.482832350391837,1.0,90

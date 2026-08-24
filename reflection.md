@@ -1,0 +1,13 @@
+# Reflection
+
+The strongest result was not merely that Referral ranked first. It was the size and consistency of the gap: 6.61x aggregate ROAS and $78 aggregate CPA compared with a next-best ROAS of only 0.61x. That made the statistical results less sensitive to multiplicity correction than I initially expected. Bonferroni reduced significant CPA comparisons from 16 to 15 and conversion comparisons from 16 to 13; Benjamini-Hochberg retained 16 and 15, respectively. Large effects can survive correction, but that does not make them causal.
+
+The most important analytical choice was defining the observation unit. The raw source contains six companies for each date-channel combination. Treating all 3,780 rows as independent would make the sample look larger and could overstate precision. Aggregating to 630 date-channel rows makes the comparison more defensible for a portfolio-level decision. A remaining weakness is daily autocorrelation, which the Welch tests do not model.
+
+CPA also required careful handling. On a day with zero conversions, CPA is undefined rather than zero or infinite. Excluding those days from the CPA test avoids a meaningless numeric replacement, while the Fisher exact test preserves their conversion information through the aggregated click and conversion counts. This split illustrates why one metric and one test are rarely enough.
+
+The correction methods answer different questions. Bonferroni is appropriate when even one false positive is costly, but it can be overly conservative for a discovery-oriented prioritization exercise. Benjamini-Hochberg better matches the business task: identify a manageable set of promising differences while controlling the expected false-discovery proportion. I used FDR for the primary narrative and Bonferroni as a robustness check.
+
+The power analysis changed how I would communicate the 90-day sample. It supports effects around 10% or larger under the simulation assumptions, but not a subtle 5% CPA change. “No significant difference” would therefore not necessarily mean “equivalent.” Future work should pre-register the smallest effect worth acting on and collect the corresponding duration before reviewing results.
+
+Finally, the recommendation intentionally does not place Referral at the 30% cap even though it dominates the synthetic benchmark. The rank-based allocation preserves learning across channels, and the cap protects against attribution bias, scale decay, and synthetic-to-real transfer risk. In a production setting, I would replace the benchmark with internal data, measure contribution margin, model time dependence and spend-response curves, and use a randomized holdout before increasing concentration.

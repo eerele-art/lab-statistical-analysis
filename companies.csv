@@ -1,0 +1,7 @@
+company_id,company_name,industry,growth_style,founded_date,avg_revenue_per_customer,gross_margin_pct,initial_active_customers
+C001,AlphaFlow,Developer Tools,steady_plg,2025-01-15,461.00,0.77,80
+C002,NorthOps,FinTech,paid_accelerator,2024-09-10,612.00,0.73,94
+C003,BrightOps,Cybersecurity,enterprise_lumpy,2024-01-25,738.00,0.80,107
+C004,ClearAnalytics,HealthTech,seasonal_b2c,2021-04-08,612.00,0.78,80
+C005,VectorFlow,HR Tech,churn_recovery,2023-01-19,279.00,0.79,125
+C006,SummitLoop,Vertical SaaS,capital_infusion,2022-03-05,307.00,0.90,169

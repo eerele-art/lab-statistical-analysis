@@ -1,0 +1,5 @@
+effect_size_pct,target_power,minimum_days_per_channel,power_at_minimum,current_90_days_status
+0.05,0.8,150,0.828,insufficient
+0.1,0.8,40,0.835,sufficient
+0.15,0.8,20,0.867,sufficient
+0.2,0.8,20,0.984,sufficient

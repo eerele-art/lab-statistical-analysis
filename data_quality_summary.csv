@@ -1,0 +1,9 @@
+check,value
+source_rows,3780
+processed_rows,630
+source_companies,6
+channels,7
+days,90
+required_missing_values,0
+negative_numeric_values,0
+funnel_invariant_violations,0

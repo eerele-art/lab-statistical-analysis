@@ -1,0 +1,7 @@
+test_family,method,significant_comparisons,total_comparisons
+CPA t-tests,Uncorrected,16,21
+CPA t-tests,Bonferroni,15,21
+CPA t-tests,Benjamini-Hochberg FDR,16,21
+Conversion Fisher tests,Uncorrected,16,21
+Conversion Fisher tests,Bonferroni,13,21
+Conversion Fisher tests,Benjamini-Hochberg FDR,15,21
